@@ -1,0 +1,80 @@
+$ColorRosa1: #B0578D;
+$ColorRosa2: #FACBEA;
+$ColorClaro: #FFE4D6;
+$borde: 2px solid $ColorRosa1;
+
+body {
+    margin: 0;
+    padding: 0;
+    .fondo{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: -2;
+    }
+}
+
+.fixed{
+    position: fixed;
+    header {
+        .menu{
+            margin: 0;
+            padding: 1rem 0rem;
+            text-align: center;
+            padding-top: 1rem;
+            width: 100%;
+            height: 1rem;
+            a{
+                margin: 0 .5rem;
+                color: $ColorRosa1;
+                font-family: 'Raleway', sans-serif;
+                text-decoration: none;
+                font-size: 1rem;
+                &:hover {
+                    color: $ColorClaro;
+                }
+            }
+        }
+    }
+    aside{
+        .contornoCelu{
+            max-width: 20rem;
+            height: 40rem;
+            background: rgb(250,203,234, 0.4);
+            border-radius: 20px;
+            padding: 1rem 1rem 1.1rem 1rem;
+            border: $borde;
+            margin: .5rem 0 0 2rem
+        } .pantallaCelu{
+            max-width: 20rem;
+            height: 37rem;
+            background: rgb(255,228,214, 0.5);
+            overflow: hidden;
+            border-radius: 20px;
+            border: $borde;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+        } img{
+            border-radius: 30px;
+        }
+        .btnCelu {
+            background: rgb(217, 136, 185, .6);
+            width: 45px;
+            height: 45px;
+            border: $borde;
+            border-radius: 50%;
+            margin: 5px auto;
+        }
+    }
+}
+
+
+
+.contenido {
+    max-width: 64rem;
+    padding: 3rem 4rem 3rem 26rem;
+    text-align: center;
+    
+}
