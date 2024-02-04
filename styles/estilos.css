@@ -37,6 +37,8 @@ body .fondo {
   border-radius: 20px;
   padding: 1rem 1rem 1.1rem 1rem;
   border: 2px solid #B0578D;
+  font-family: "Raleway", sans-serif;
+  color: #B0578D;
   margin: 0.5rem 0 0 2rem;
 }
 .fixed aside .pantallaCelu {
@@ -54,6 +56,26 @@ body .fondo {
 .fixed aside img {
   border-radius: 30px;
 }
+.fixed aside h2 {
+  font-weight: 400;
+  font-size: 2rem;
+  margin: 0.3rem;
+}
+.fixed aside h3 {
+  font-weight: 400;
+  margin: 0 1rem 1rem;
+  text-align: center;
+}
+.fixed aside .redes {
+  margin: 0 2rem 0.5rem;
+}
+.fixed aside p {
+  font-style: italic;
+  font-weight: 200;
+  font-size: 1.2rem;
+  height: 7rem;
+  padding: 0 0.4rem;
+}
 .fixed aside .btnCelu {
   background: rgba(217, 136, 185, 0.6);
   width: 45px;
@@ -67,4 +89,133 @@ body .fondo {
   max-width: 64rem;
   padding: 3rem 4rem 3rem 26rem;
   text-align: center;
+  font-family: "Raleway", sans-serif;
+  color: #B0578D;
+  /* .proyectos{} */
+}
+.contenido .inicio h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  color: #FFE4D6;
+  -webkit-text-stroke-color: #B0578D;
+  -webkit-text-stroke-width: 1.2px;
+}
+.contenido .inicio p {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 15rem;
+}
+.contenido .educacion h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  color: #FFE4D6;
+  margin-bottom: 10px;
+  -webkit-text-stroke-color: #B0578D;
+  -webkit-text-stroke-width: 1.2px;
+}
+.contenido .contenedor {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  overflow: hidden;
+  margin-bottom: 10rem;
+}
+.contenido .contenedor .escuela {
+  border: 2px solid #B0578D;
+  background: rgba(255, 228, 214, 0.5);
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+}
+.contenido .tecnologias h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  color: #FFE4D6;
+  margin-bottom: 10px;
+  -webkit-text-stroke-color: #B0578D;
+  -webkit-text-stroke-width: 1.2px;
+}
+.contenido .tecnologias .contenedor {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+.contenido .tecnologias .contenedor .tecnologia {
+  border: 2px solid #B0578D;
+  background: rgba(255, 228, 214, 0.5);
+  border-radius: 20px;
+  margin: 1rem;
+}
+.contenido .contacto h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  color: #FFE4D6;
+  margin-bottom: 10px;
+  -webkit-text-stroke-color: #B0578D;
+  -webkit-text-stroke-width: 1.2px;
+}
+.contenido .contacto .formulario {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contenido .contacto .formulario input[type=text],
+.contenido .contacto .formulario input[type=email],
+.contenido .contacto .formulario textarea {
+  border: 2px solid #B0578D;
+  background: rgba(255, 228, 214, 0.5);
+  border-radius: 10px;
+  margin: 1rem;
+}
+.contenido .contacto .formulario input[type=text]:focus,
+.contenido .contacto .formulario input[type=email]:focus,
+.contenido .contacto .formulario textarea:focus {
+  outline: none;
+  border: 2px solid #FFE4D6;
+}
+.contenido .contacto .formulario input[type=text],
+.contenido .contacto .formulario input[type=email] {
+  width: 45%;
+  margin-bottom: 15px;
+  height: 3rem;
+}
+.contenido .contacto .formulario textarea {
+  width: 96%;
+  height: 100px;
+  min-width: 96%;
+  max-width: 96%;
+  min-height: 200px;
+  max-height: 300px;
+  margin-bottom: 15px;
+}
+.contenido .contacto .formulario input[type=text]::-moz-placeholder, .contenido .contacto .formulario input[type=email]::-moz-placeholder, .contenido .contacto .formulario textarea::-moz-placeholder {
+  color: #FFE4D6;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+}
+.contenido .contacto .formulario input[type=text]::placeholder,
+.contenido .contacto .formulario input[type=email]::placeholder,
+.contenido .contacto .formulario textarea::placeholder {
+  color: #FFE4D6;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+}
+.contenido .contacto .formulario .boton {
+  margin: auto;
+  background-color: #B0578D;
+  color: #FFE4D6;
+  border: 2px solid #FFE4D6;
+  border-radius: 10px;
+  padding: 5px 30px;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+}
+.contenido .contacto .formulario .boton:hover {
+  background-color: #FACBEA;
+  color: #B0578D;
+  border: 2px solid #B0578D;
 }/*# sourceMappingURL=estilos.css.map */

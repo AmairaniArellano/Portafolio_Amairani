@@ -2,6 +2,7 @@ $ColorRosa1: #B0578D;
 $ColorRosa2: #FACBEA;
 $ColorClaro: #FFE4D6;
 $borde: 2px solid $ColorRosa1;
+$raleway: 'Raleway', sans-serif;
 
 body {
     margin: 0;
@@ -27,7 +28,7 @@ body {
             a{
                 margin: 0 .5rem;
                 color: $ColorRosa1;
-                font-family: 'Raleway', sans-serif;
+                font-family: $raleway;
                 text-decoration: none;
                 font-size: 1rem;
                 &:hover {
@@ -44,7 +45,10 @@ body {
             border-radius: 20px;
             padding: 1rem 1rem 1.1rem 1rem;
             border: $borde;
+            font-family: $raleway;
+            color: $ColorRosa1;
             margin: .5rem 0 0 2rem
+            
         } .pantallaCelu{
             max-width: 20rem;
             height: 37rem;
@@ -58,6 +62,22 @@ body {
             justify-content: center;
         } img{
             border-radius: 30px;
+        } h2{
+            font-weight: 400;
+            font-size: 2rem;
+            margin: 0.3rem;
+        } h3{
+            font-weight: 400;
+            margin: 0 1rem 1rem;
+            text-align: center;
+        } .redes{
+            margin: 0 2rem .5rem;
+        } p {
+            font-style: italic;
+            font-weight: 200;
+            font-size: 1.2rem;
+            height: 7rem;
+            padding: 0 .4rem
         }
         .btnCelu {
             background: rgb(217, 136, 185, .6);
@@ -76,5 +96,132 @@ body {
     max-width: 64rem;
     padding: 3rem 4rem 3rem 26rem;
     text-align: center;
-    
+    font-family: $raleway;
+    color: $ColorRosa1;
+    .inicio{
+        h1{
+            font-size: 4rem;
+            font-weight: 400;
+            color: $ColorClaro;
+            -webkit-text-stroke-color: $ColorRosa1;
+            -webkit-text-stroke-width: 1.2px;
+        } p{
+            font-size: 2rem;
+            color: white;
+            margin-bottom: 15rem;
+        }
+    }
+    .educacion{
+        h1{
+            font-size: 4rem;
+            font-weight: 400;
+            color: $ColorClaro;
+            margin-bottom: 10px;
+            -webkit-text-stroke-color: $ColorRosa1;
+            -webkit-text-stroke-width: 1.2px;
+        }
+    }.contenedor {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        overflow: hidden;
+        margin-bottom: 10rem;
+        .escuela{
+            border: $borde;
+            background: rgb(255,228,214, 0.5);
+            border-radius: 20px;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    .tecnologias {
+        h1{
+            font-size: 4rem;
+            font-weight: 400;
+            color: $ColorClaro;
+            margin-bottom: 10px;
+            -webkit-text-stroke-color: $ColorRosa1;
+            -webkit-text-stroke-width: 1.2px;
+        }
+        .contenedor{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            overflow: hidden;
+            .tecnologia{
+                border: $borde;
+                background: rgb(255,228,214, 0.5);
+                border-radius: 20px;
+                margin: 1rem;
+            }
+        }
+    }
+
+    /* .proyectos{} */
+
+    .contacto {
+        h1{
+            font-size: 4rem;
+            font-weight: 400;
+            color: $ColorClaro;
+            margin-bottom: 10px;
+            -webkit-text-stroke-color: $ColorRosa1;
+            -webkit-text-stroke-width: 1.2px;
+        }
+        .formulario{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            input[type="text"], 
+            input[type="email"], 
+            textarea{
+                border: $borde;
+                background: rgb(255,228,214, 0.5);
+                border-radius: 10px;
+                margin: 1rem;
+                &:focus{
+                    outline: none;
+                    border: 2px solid $ColorClaro;
+                }
+            }input[type="text"], 
+            input[type="email"]{
+                width: 45%;
+                margin-bottom: 15px;
+                height: 3rem;
+        }textarea{
+            width: 96%;
+            height: 100px;
+            min-width: 96%;
+            max-width: 96%;
+            min-height: 200px;
+            max-height: 300px;
+            margin-bottom: 15px;
+        } input[type="text"]::placeholder, 
+        input[type="email"]::placeholder, 
+        textarea::placeholder{
+            color: $ColorClaro;
+            font-family: $raleway;
+            font-size: 1.5rem;
+        }
+        .boton{
+            margin: auto;
+            background-color: $ColorRosa1;
+            color: $ColorClaro;
+            border: 2px solid $ColorClaro;
+            border-radius: 10px;
+            padding: 5px 30px;
+            cursor: pointer;
+            font-family: $raleway;
+            font-size: 2rem;
+            &:hover{
+                background-color: $ColorRosa2;
+                color: $ColorRosa1;
+                border: 2px solid $ColorRosa1;
+            }
+        }
+      } 
+    }
 }
