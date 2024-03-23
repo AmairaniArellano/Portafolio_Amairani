@@ -10,9 +10,10 @@ body .fondo {
 }
 
 .fixed {
-  position: fixed;
+  /*  ----------------------INFORMACION EN FORMA DE CELULAR---------------------------------- */
 }
 .fixed header .menu {
+  position: fixed;
   margin: 0;
   padding: 1rem 0rem;
   text-align: center;
@@ -31,6 +32,7 @@ body .fondo {
   color: #FFE4D6;
 }
 .fixed aside .contornoCelu {
+  position: fixed;
   max-width: 20rem;
   height: 40rem;
   background: rgba(250, 203, 234, 0.4);
@@ -218,4 +220,33 @@ body .fondo {
   background-color: #FACBEA;
   color: #B0578D;
   border: 2px solid #B0578D;
+}
+
+/* ----------------------------------RESPONSIVE MOBILE-------------------------------------------- */
+@media only screen and (max-width: 760px) {
+  .fixed .menu {
+    position: fixed;
+    background-color: #FACBEA;
+    z-index: 1;
+  }
+  aside {
+    display: flex;
+    justify-content: center;
+  }
+  aside .contornoCelu {
+    position: absolute !important;
+    margin: 0 auto !important;
+    margin-top: 3rem !important;
+  }
+  .contenido {
+    top: 42.5rem;
+    padding: 1rem;
+    position: relative;
+  }
+  .contacto .formulario input[type=text],
+  .contacto .formulario input[type=email] {
+    width: 90% !important;
+    margin-bottom: 15px;
+    height: 3rem;
+  }
 }/*# sourceMappingURL=estilos.css.map */
